@@ -161,6 +161,7 @@
     .card.loss { border-color:#efccc7; background:var(--red-soft); }
     .label { color:var(--muted); font-size:11px; font-weight:850; letter-spacing:.055em; text-transform:uppercase; }
     .value { margin-top:7px; font-size:29px; font-weight:900; line-height:1.05; letter-spacing:-.035em; font-variant-numeric:tabular-nums; }
+    .value.compact { font-size:22px; letter-spacing:-.025em; }
     .value.green { color:var(--green); }
     .sub { margin-top:7px; color:var(--muted); font-size:13px; line-height:1.4; }
     .tag {
@@ -306,6 +307,17 @@
       </div>
 
       <div class="section-head">
+        <div><div class="kicker">Предмет угоди</div><h2>Що саме пропонуємо Сільпо</h2></div>
+        <p>Комерційна оболонка однакова у V1 і V2; змінюється лише ставка, модель доставки та глибина маркетингу.</p>
+      </div>
+      <div class="grid four">
+        <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">бренд Сільпо в Bolt Food</div></article>
+        <article class="card"><div class="label">Асортимент</div><div class="value">≈150 SKU</div><div class="sub">меню, ціни, стоки, фото</div></article>
+        <article class="card"><div class="label">Потенціал мережі</div><div class="value">165</div><div class="sub">магазинів у 71 місті</div></article>
+        <article class="card"><div class="label">Перетин з Bolt Food</div><div class="value">33</div><div class="sub">міст уже покриті платформою, за текстом офера</div></article>
+      </div>
+
+      <div class="section-head">
         <div><div class="kicker">Очікуваний масштаб</div><h2>2027 за фінальними ставками</h2></div>
         <p>Горизонт — 12 місяців. Кількість магазинів у моделі зафіксована; відрізняється очікувана продуктивність на магазин.</p>
       </div>
@@ -367,9 +379,15 @@
     <section class="panel" id="v1" role="tabpanel" aria-labelledby="tab-v1">
       <div class="section-head">
         <div><div class="kicker">Серпень 2026 · початкова позиція</div><h2>Комерційний офер V1</h2></div>
-        <p>Чотири окремі варіанти на контракт 1 рік. Повний маркетинговий пакет привʼязаний до 6 місяців ексклюзиву.</p>
+        <p>Чотири окремі варіанти на контракт 1 рік. Повний маркетинговий пакет привʼязаний до 6 місяців ексклюзиву. Пропозиція чинна 30 днів від серпня 2026.</p>
       </div>
       <div class="grid four">
+        <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">запуск під брендом Сільпо</div></article>
+        <article class="card"><div class="label">SKU</div><div class="value">≈150</div><div class="sub">позицій меню в категорії</div></article>
+        <article class="card"><div class="label">Географія офера</div><div class="value">165 / 71</div><div class="sub">магазинів / міст — заявлений потенціал</div></article>
+        <article class="card"><div class="label">Bolt Food уже є</div><div class="value">33</div><div class="sub">з 71 міста вже працюють у платформі</div></article>
+      </div>
+      <div class="grid four" style="margin-top:14px">
         <article class="card">
           <div class="label">Варіант 1 · курʼєри Сільпо</div><div class="value">10%</div>
           <div class="sub">1 рік · без ексклюзиву</div><span class="tag">Базові DF</span>
@@ -393,22 +411,48 @@
       </div>
 
       <div class="section-head">
-        <div><div class="kicker">Спільно для всіх опцій</div><h2>Що включав офер</h2></div>
+        <div><div class="kicker">Спільно для всіх опцій</div><h2>Що входить у пакет</h2></div>
       </div>
       <div class="grid four">
         <article class="card"><div class="label">Контракт</div><div class="value">1 рік</div><div class="sub">умови фіксуються договором</div></article>
         <article class="card"><div class="label">Розміщення</div><div class="value">Brand store</div><div class="sub">Сільпо + категорія в застосунку</div></article>
-        <article class="card"><div class="label">Інтеграція</div><div class="value">≈2 тижні</div><div class="sub">меню, ціни, стоки, фото та зони</div></article>
-        <article class="card"><div class="label">Підтримка</div><div class="value">24/7</div><div class="sub">партнерський портал, замовлення та рейтинги</div></article>
+        <article class="card"><div class="label">Інтеграція</div><div class="value">≈2 тижні</div><div class="sub">SKU, фото, ціни, стоки, зони доставки</div></article>
+        <article class="card"><div class="label">Підтримка</div><div class="value">24/7</div><div class="sub">супровід + партнерський портал</div></article>
       </div>
+      <div class="grid two" style="margin-top:14px">
+        <article class="card">
+          <h3>Маркетинг за рахунок Bolt</h3>
+          <ul class="assumptions">
+            <li>Без ексклюзиву (варіанти 1 і 3) — лише періодичні DF-кампанії.</li>
+            <li>Ексклюзив 6 міс. (варіанти 2 і 4) — повний пакет: DF, банери, пуш, модал, розсилка на ітерів.</li>
+            <li>Календар фіксується окремим планом.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Наступні кроки з офера</h3>
+          <ul class="assumptions">
+            <li><b>Крок 1.</b> Вибір варіанту: ставка, курʼєри, ексклюзив.</li>
+            <li><b>Крок 2.</b> Договір на 1 рік + план DF-кампаній.</li>
+            <li><b>Крок 3.</b> Інтеграція меню ≈2 тижні.</li>
+            <li><b>Крок 4.</b> Пілот у топ-містах → мережа.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="fine">Комісія нараховується від товарної частини замовлення (без вартості доставки). Усі ставки без ПДВ. Пропозиція є комерційною і не є публічною офертою.</p>
     </section>
 
     <section class="panel" id="v2" role="tabpanel" aria-labelledby="tab-v2">
       <div class="section-head">
         <div><div class="kicker">Фінальна позиція</div><h2>Офер V2: простіше для вибору, нижче за ставкою</h2></div>
-        <p>Два маршрути за типом курʼєрів; у кожному — стандартна ставка або дисконт за 6 місяців ексклюзиву.</p>
+        <p>Два маршрути за типом курʼєрів; у кожному — стандартна ставка або дисконт за 6 місяців ексклюзиву. Scope категорії та SKU не змінювався відносно V1.</p>
       </div>
-      <div class="grid two">
+      <div class="grid four">
+        <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">бренд-стор Сільпо + полиця в застосунку</div></article>
+        <article class="card"><div class="label">SKU</div><div class="value">≈150</div><div class="sub">те саме меню, що в V1</div></article>
+        <article class="card"><div class="label">Потенціал</div><div class="value">165</div><div class="sub">магазинів у 71 місті</div></article>
+        <article class="card"><div class="label">Чинність</div><div class="value">30 днів</div><div class="sub">серпень 2026 · контракт 1 рік</div></article>
+      </div>
+      <div class="grid two" style="margin-top:14px">
         <article class="card">
           <div class="label">Маршрут 1 · курʼєри Сільпо</div>
           <div class="grid two" style="margin-top:16px">
@@ -425,6 +469,24 @@
           </div>
           <ul><li>0 витрат Сільпо на last-mile логістику</li><li>2 в.п. ставки — Bolt Plus</li></ul>
           <span class="tag dark">Рекомендований маршрут</span>
+        </article>
+      </div>
+      <div class="grid two" style="margin-top:14px">
+        <article class="card">
+          <h3>Маркетинг за рахунок Bolt</h3>
+          <ul class="assumptions">
+            <li>Звичайна ставка — базовий обсяг: лише періодичні DF-кампанії.</li>
+            <li>Ексклюзив 6 міс. — повний пакет: DF, банери, пуш, модал, розсилка на ітерів.</li>
+            <li>На курʼєрах Bolt: 2 в.п. ставки — Bolt Plus, безкоштовна доставка для підписників.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Що не змінилось від V1</h3>
+          <ul class="assumptions">
+            <li>Категорія, ≈150 SKU, brand store, інтеграція ≈2 тижні, супровід 24/7.</li>
+            <li>Комісія — від товарної частини, без вартості доставки, ставки без ПДВ.</li>
+            <li>Запуск: пілот у топ-містах, далі мережа. Календар DF фіксується окремо.</li>
+          </ul>
         </article>
       </div>
 
@@ -543,6 +605,7 @@
           </ul>
         </article>
       </div>
+      <div class="callout"><span class="dot"></span><span><b>Дві цифри про міста:</b> офер каже, що Bolt Food уже працює в 33 з 71 заявлених міст Сільпо. У прогнозній базі — 31 місто з live-магазинами; платформа загалом присутня в 37 містах України.</span></div>
       <p class="fine">Джерело фактичних даних: main.ng_delivery · бренди LOKO + DARK KITCHEN SILPO + SILPO RESTO · серпень 2026. Прогноз: Silpo_Forecast_Ukraine 2027. Сезонність не закладена: лютий нижчий за січень лише через кількість днів.</p>
     </section>
 
