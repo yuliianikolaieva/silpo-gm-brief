@@ -196,7 +196,17 @@
     table.tight { min-width:0; }
     table.tight th, table.tight td { padding:9px 14px; font-size:12.5px; }
     table.tight tr.rest td { color:var(--muted); font-style:italic; }
-    .fine { margin:12px 2px 0; color:var(--muted); font-size:11.5px; line-height:1.5; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .chip {
+      padding:7px 11px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#f7f9f8;
+      color:var(--body);
+      font-size:12.5px;
+      font-weight:700;
+      line-height:1.3;
+    }
     .callout {
       display:flex;
       align-items:flex-start;
@@ -281,7 +291,7 @@
         <span class="pill">Прогноз 2027</span>
       </div>
       <h1>Умови угоди, поступка в ставці та очікуваний імпакт</h1>
-      <p>Один документ для підготовки до зустрічі зі stakeholder Сільпо: що ми пропонували спочатку, що залишилося у фінальному офері та який бізнес-результат дає кожна опція.</p>
+      <p>Сільпо хоче запустити на Bolt Food категорію «Готові страви і кулінарія» під брендом Сільпо. Рішення на зустріч: <b>модель доставки та комісійний ramp для 3-місячного pilot</b>.</p>
     </section>
 
     <nav class="tabs-wrap" aria-label="Розділи документа">
@@ -298,24 +308,38 @@
         <div>
           <div class="kicker">Рекомендація для GM</div>
           <div class="headline">Захищати 12% на курʼєрах Bolt без ексклюзиву</div>
-          <p>Це найкращий баланс масштабу та економіки: <b>132.2k замовлень</b>, <b>€1.89m товарного GMV</b> і найбільший <b>Pre-HQ profit €44.6k</b> за 2027 рік. Якщо ексклюзивність є стратегічною вимогою, fallback — 10% на 6 місяців → 12% далі.</p>
+          <p>Рішення зараз — не весь 12-місячний контракт, а <b>модель доставки та комісійний ramp на 3-місячний pilot</b>. На горизонті 2027 це дає <b>132.2k замовлень</b>, <b>€1.89m GMV</b> і найбільший <b>Pre-HQ profit €44.6k</b>. Якщо ексклюзив обовʼязковий — fallback 10% → 12%.</p>
         </div>
         <div class="talk-track">
           <strong>Ключовий меседж на зустріч</strong>
-          <p>Фінальний офер уже містить суттєву цінову поступку. Додаткове зниження ставки має компенсуватися обсягом, ексклюзивом або чітко зафіксованим маркетинговим планом.</p>
+          <p>Сільпо запускає категорію під власним брендом. Фінальний офер уже містить цінову поступку; додатковий дисконт на пілоті має бути обмежений за часом і привʼязаний до моделі доставки.</p>
         </div>
       </div>
 
       <div class="section-head">
-        <div><div class="kicker">Предмет угоди</div><h2>Що саме пропонуємо Сільпо</h2></div>
-        <p>Комерційна оболонка однакова у V1 і V2; змінюється лише ставка, модель доставки та глибина маркетингу.</p>
+        <div><div class="kicker">Предмет угоди</div><h2>Категорія, асортимент і SKU</h2></div>
+        <p>Сільпо хоче запустити на Bolt Food категорію «Готові страви і кулінарія» під брендом Сільпо.</p>
       </div>
       <div class="grid four">
         <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">бренд Сільпо в Bolt Food</div></article>
-        <article class="card"><div class="label">Асортимент</div><div class="value">≈150 SKU</div><div class="sub">меню, ціни, стоки, фото</div></article>
+        <article class="card"><div class="label">SKU на магазин</div><div class="value">50–350</div><div class="sub">план запуску ~150 SKU</div></article>
         <article class="card"><div class="label">Потенціал мережі</div><div class="value">165</div><div class="sub">магазинів у 71 місті</div></article>
-        <article class="card"><div class="label">Перетин з Bolt Food</div><div class="value">33</div><div class="sub">міст уже покриті платформою, за текстом офера</div></article>
+        <article class="card"><div class="label">Рішення зараз</div><div class="value compact">3-міс. pilot</div><div class="sub">модель доставки + комісійний ramp</div></article>
       </div>
+      <article class="card" style="margin-top:14px">
+        <div class="label">Асортимент категорії</div>
+        <div class="chips">
+          <span class="chip">млинці / сирники / запіканки</span>
+          <span class="chip">перші страви</span>
+          <span class="chip">другі страви</span>
+          <span class="chip">суші / піца / бургери</span>
+          <span class="chip">салати та закуски</span>
+          <span class="chip">десерти та напої</span>
+          <span class="chip">сніданки та комплексні обіди</span>
+          <span class="chip">пироги / випічка</span>
+          <span class="chip">напівфабрикати власного виробництва</span>
+        </div>
+      </article>
 
       <div class="section-head">
         <div><div class="kicker">Очікуваний масштаб</div><h2>2027 за фінальними ставками</h2></div>
@@ -383,10 +407,24 @@
       </div>
       <div class="grid four">
         <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">запуск під брендом Сільпо</div></article>
-        <article class="card"><div class="label">SKU</div><div class="value">≈150</div><div class="sub">позицій меню в категорії</div></article>
+        <article class="card"><div class="label">SKU на магазин</div><div class="value">50–350</div><div class="sub">план запуску ~150 SKU</div></article>
         <article class="card"><div class="label">Географія офера</div><div class="value">165 / 71</div><div class="sub">магазинів / міст — заявлений потенціал</div></article>
         <article class="card"><div class="label">Bolt Food уже є</div><div class="value">33</div><div class="sub">з 71 міста вже працюють у платформі</div></article>
       </div>
+      <article class="card" style="margin-top:14px">
+        <div class="label">Асортимент</div>
+        <div class="chips">
+          <span class="chip">млинці / сирники / запіканки</span>
+          <span class="chip">перші страви</span>
+          <span class="chip">другі страви</span>
+          <span class="chip">суші / піца / бургери</span>
+          <span class="chip">салати та закуски</span>
+          <span class="chip">десерти та напої</span>
+          <span class="chip">сніданки та комплексні обіди</span>
+          <span class="chip">пироги / випічка</span>
+          <span class="chip">напівфабрикати власного виробництва</span>
+        </div>
+      </article>
       <div class="grid four" style="margin-top:14px">
         <article class="card">
           <div class="label">Варіант 1 · курʼєри Сільпо</div><div class="value">10%</div>
@@ -434,7 +472,7 @@
             <li><b>Крок 1.</b> Вибір варіанту: ставка, курʼєри, ексклюзив.</li>
             <li><b>Крок 2.</b> Договір на 1 рік + план DF-кампаній.</li>
             <li><b>Крок 3.</b> Інтеграція меню ≈2 тижні.</li>
-            <li><b>Крок 4.</b> Пілот у топ-містах → мережа.</li>
+            <li><b>Крок 4.</b> 3-місячний pilot у топ-містах → мережа.</li>
           </ul>
         </article>
       </div>
@@ -444,14 +482,28 @@
     <section class="panel" id="v2" role="tabpanel" aria-labelledby="tab-v2">
       <div class="section-head">
         <div><div class="kicker">Фінальна позиція</div><h2>Офер V2: простіше для вибору, нижче за ставкою</h2></div>
-        <p>Два маршрути за типом курʼєрів; у кожному — стандартна ставка або дисконт за 6 місяців ексклюзиву. Scope категорії та SKU не змінювався відносно V1.</p>
+        <p>Два маршрути за типом курʼєрів; у кожному — стандартна ставка або дисконт за 6 місяців ексклюзиву. Рішення на зустріч: модель доставки та комісійний ramp для 3-місячного pilot.</p>
       </div>
       <div class="grid four">
         <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">бренд-стор Сільпо + полиця в застосунку</div></article>
-        <article class="card"><div class="label">SKU</div><div class="value">≈150</div><div class="sub">те саме меню, що в V1</div></article>
+        <article class="card"><div class="label">SKU на магазин</div><div class="value">50–350</div><div class="sub">план запуску ~150 SKU</div></article>
         <article class="card"><div class="label">Потенціал</div><div class="value">165</div><div class="sub">магазинів у 71 місті</div></article>
-        <article class="card"><div class="label">Чинність</div><div class="value">30 днів</div><div class="sub">серпень 2026 · контракт 1 рік</div></article>
+        <article class="card"><div class="label">Рішення зараз</div><div class="value compact">3-міс. pilot</div><div class="sub">модель доставки + комісійний ramp</div></article>
       </div>
+      <article class="card" style="margin-top:14px">
+        <div class="label">Асортимент</div>
+        <div class="chips">
+          <span class="chip">млинці / сирники / запіканки</span>
+          <span class="chip">перші страви</span>
+          <span class="chip">другі страви</span>
+          <span class="chip">суші / піца / бургери</span>
+          <span class="chip">салати та закуски</span>
+          <span class="chip">десерти та напої</span>
+          <span class="chip">сніданки та комплексні обіди</span>
+          <span class="chip">пироги / випічка</span>
+          <span class="chip">напівфабрикати власного виробництва</span>
+        </div>
+      </article>
       <div class="grid two" style="margin-top:14px">
         <article class="card">
           <div class="label">Маршрут 1 · курʼєри Сільпо</div>
@@ -483,9 +535,9 @@
         <article class="card">
           <h3>Що не змінилось від V1</h3>
           <ul class="assumptions">
-            <li>Категорія, ≈150 SKU, brand store, інтеграція ≈2 тижні, супровід 24/7.</li>
+            <li>Категорія, 50–350 SKU на магазин (план ~150), brand store, інтеграція ≈2 тижні, супровід 24/7.</li>
             <li>Комісія — від товарної частини, без вартості доставки, ставки без ПДВ.</li>
-            <li>Запуск: пілот у топ-містах, далі мережа. Календар DF фіксується окремо.</li>
+            <li>Запуск: 3-місячний pilot у топ-містах, далі мережа. Календар DF фіксується окремо.</li>
           </ul>
         </article>
       </div>
