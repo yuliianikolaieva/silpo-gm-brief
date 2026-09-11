@@ -74,13 +74,7 @@
       border-radius:50%;
       opacity:.9;
     }
-    .eyebrow {
-      display:flex;
-      gap:8px;
-      align-items:center;
-      flex-wrap:wrap;
-      margin-bottom:18px;
-    }
+    .eyebrow { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:18px; }
     .pill {
       padding:6px 11px;
       border:1px solid rgba(255,255,255,.2);
@@ -92,7 +86,7 @@
       text-transform:uppercase;
     }
     .pill.accent { color:var(--dark); background:var(--lime); border-color:var(--lime); }
-    h1 { max-width:850px; margin:0; font-size:clamp(32px,5vw,58px); line-height:1.02; letter-spacing:-.045em; }
+    h1 { max-width:850px; margin:0; font-size:clamp(32px,5vw,54px); line-height:1.03; letter-spacing:-.045em; }
     .hero p { max-width:830px; margin:18px 0 0; color:rgba(255,255,255,.72); font-size:17px; line-height:1.55; }
     .tabs-wrap { margin:18px 0 26px; }
     .tabs {
@@ -126,7 +120,7 @@
       margin:34px 0 16px;
     }
     .kicker { color:var(--green); font-size:12px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
-    h2 { margin:5px 0 0; font-size:clamp(25px,3.2vw,38px); line-height:1.1; letter-spacing:-.035em; }
+    h2 { margin:5px 0 0; font-size:clamp(25px,3.2vw,36px); line-height:1.1; letter-spacing:-.035em; }
     h3 { margin:0 0 8px; font-size:18px; line-height:1.25; }
     .section-head p { max-width:530px; margin:0; color:var(--muted); font-size:14px; line-height:1.5; }
     .recommendation {
@@ -140,25 +134,16 @@
     }
     .recommendation .headline { margin:6px 0 9px; font-size:27px; font-weight:900; line-height:1.12; letter-spacing:-.03em; }
     .recommendation p { margin:0; color:var(--body); line-height:1.52; }
-    .talk-track {
-      padding-left:22px;
-      border-left:1px solid #b9dcca;
-    }
+    .talk-track { padding-left:22px; border-left:1px solid #b9dcca; }
     .talk-track strong { display:block; margin-bottom:6px; color:var(--green-dark); font-size:12px; text-transform:uppercase; letter-spacing:.07em; }
     .talk-track p { font-size:14px; font-weight:700; }
     .grid { display:grid; gap:14px; }
     .grid.four { grid-template-columns:repeat(4,minmax(0,1fr)); }
     .grid.three { grid-template-columns:repeat(3,minmax(0,1fr)); }
     .grid.two { grid-template-columns:repeat(2,minmax(0,1fr)); }
-    .card {
-      padding:20px;
-      border:1px solid var(--line);
-      border-radius:17px;
-      background:var(--paper);
-    }
+    .card { padding:20px; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
     .card.recommended { border:2px solid var(--green); padding:19px; }
     .card.warning { border-color:#ecd9ae; background:var(--amber-soft); }
-    .card.loss { border-color:#efccc7; background:var(--red-soft); }
     .label { color:var(--muted); font-size:11px; font-weight:850; letter-spacing:.055em; text-transform:uppercase; }
     .value { margin-top:7px; font-size:29px; font-weight:900; line-height:1.05; letter-spacing:-.035em; font-variant-numeric:tabular-nums; }
     .value.compact { font-size:22px; letter-spacing:-.025em; }
@@ -180,22 +165,6 @@
     .tag.amber { color:var(--amber); background:#f8e8c2; }
     .card ul { margin:14px 0 0; padding-left:18px; color:var(--body); }
     .card li { margin:6px 0; font-size:13px; line-height:1.4; }
-    .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
-    table { width:100%; min-width:880px; border-collapse:collapse; font-size:13px; }
-    th, td { padding:13px 14px; border-bottom:1px solid var(--line); text-align:left; vertical-align:middle; }
-    th { color:var(--muted); background:#f7f9f8; font-size:10px; letter-spacing:.05em; text-transform:uppercase; }
-    td.num, th.num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
-    tbody tr:last-child td { border-bottom:0; }
-    tr.best td { background:var(--soft); }
-    .delta-down { color:var(--red); font-weight:850; }
-    .profit { font-weight:900; color:var(--green-dark); }
-    .map-grid { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr); gap:16px; align-items:start; }
-    .map-box { padding:10px 12px 4px; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
-    .map { display:block; width:100%; height:auto; }
-    .map-note { margin:2px 4px 8px; color:var(--muted); font-size:11.5px; line-height:1.45; }
-    table.tight { min-width:0; }
-    table.tight th, table.tight td { padding:9px 14px; font-size:12.5px; }
-    table.tight tr.rest td { color:var(--muted); font-style:italic; }
     .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
     .chip {
       padding:7px 11px;
@@ -207,6 +176,20 @@
       font-weight:700;
       line-height:1.3;
     }
+    .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
+    table { width:100%; min-width:820px; border-collapse:collapse; font-size:13px; }
+    th, td { padding:11px 14px; border-bottom:1px solid var(--line); text-align:left; vertical-align:middle; }
+    th { color:var(--muted); background:#f7f9f8; font-size:10px; letter-spacing:.05em; text-transform:uppercase; }
+    th.num, td.num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+    th.best-col { color:var(--green-dark); background:var(--soft); }
+    td.best-col { background:var(--soft); }
+    tbody tr:last-child td { border-bottom:0; }
+    tr.group td { color:var(--muted); background:#f7f9f8; font-size:10px; font-weight:900; letter-spacing:.05em; text-transform:uppercase; }
+    tr.total td { font-weight:900; }
+    tr.total.hero-row td { color:var(--green-dark); background:var(--soft); }
+    td.indent { padding-left:30px; color:var(--body); }
+    .profit { font-weight:900; color:var(--green-dark); }
+    .neg { color:var(--red); font-weight:800; }
     .callout {
       display:flex;
       align-items:flex-start;
@@ -222,9 +205,9 @@
     .callout b { color:var(--amber); }
     .dot { flex:0 0 auto; width:9px; height:9px; margin-top:5px; border-radius:50%; background:var(--amber); }
     .bar-chart { padding:22px; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
-    .bar-row { display:grid; grid-template-columns:205px 1fr 86px; gap:14px; align-items:center; margin:14px 0; }
-    .bar-label { color:var(--body); font-size:12px; line-height:1.25; }
-    .track { height:24px; background:#edf1ee; border-radius:7px; overflow:hidden; }
+    .bar-row { display:grid; grid-template-columns:250px 1fr 92px; gap:14px; align-items:center; margin:14px 0; }
+    .bar-label { color:var(--body); font-size:12.5px; line-height:1.25; }
+    .track { height:26px; background:#edf1ee; border-radius:7px; overflow:hidden; }
     .fill { height:100%; background:var(--green); border-radius:7px; }
     .fill.muted { background:#9ea9a3; }
     .bar-value { text-align:right; font-size:13px; font-weight:900; font-variant-numeric:tabular-nums; }
@@ -233,6 +216,14 @@
     .legend .old { background:#9ea9a3; }
     .assumptions { color:var(--body); }
     .assumptions b { color:var(--ink); }
+    .map-grid { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr); gap:16px; align-items:start; }
+    .map-box { padding:10px 12px 4px; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
+    .map { display:block; width:100%; height:auto; }
+    .map-note { margin:2px 4px 8px; color:var(--muted); font-size:11.5px; line-height:1.45; }
+    table.tight { min-width:0; }
+    table.tight th, table.tight td { padding:9px 14px; font-size:12.5px; }
+    table.tight tr.rest td { color:var(--muted); font-style:italic; }
+    .fine { margin:12px 2px 0; color:var(--muted); font-size:11.5px; line-height:1.5; }
     .source-line {
       display:flex;
       justify-content:space-between;
@@ -250,7 +241,7 @@
       .grid.four, .grid.three { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .recommendation { grid-template-columns:1fr; }
       .talk-track { padding:18px 0 0; border-left:0; border-top:1px solid #b9dcca; }
-      .bar-row { grid-template-columns:145px 1fr 75px; }
+      .bar-row { grid-template-columns:170px 1fr 80px; }
       .map-grid { grid-template-columns:1fr; }
     }
     @media (max-width:620px) {
@@ -262,7 +253,7 @@
       .grid.four, .grid.three, .grid.two { grid-template-columns:1fr; }
       .section-head { align-items:flex-start; flex-direction:column; gap:10px; }
       .map-grid { grid-template-columns:1fr; }
-      .bar-row { grid-template-columns:1fr 70px; gap:7px; }
+      .bar-row { grid-template-columns:1fr 76px; gap:7px; }
       .track { grid-column:1 / -1; grid-row:2; }
     }
     @media print {
@@ -279,7 +270,7 @@
   <header class="topbar">
     <div class="shell topbar-inner">
       <div class="brand"><span class="brand-mark"></span>Сільпо × Bolt Food</div>
-      <div class="meta">GM brief · 10 вересня 2026 · Internal only</div>
+      <div class="meta">GM brief · 11 вересня 2026 · Internal only</div>
     </div>
   </header>
 
@@ -287,18 +278,18 @@
     <section class="hero">
       <div class="eyebrow">
         <span class="pill accent">Decision brief</span>
-        <span class="pill">Офер V1 → фінальний V2</span>
-        <span class="pill">Прогноз 2027</span>
+        <span class="pill">Фінальний офер</span>
+        <span class="pill">Бізнес-модель · 12 місяців</span>
       </div>
-      <h1>Умови угоди, поступка в ставці та очікуваний імпакт</h1>
+      <h1>Чотири варіанти угоди та їх вплив на Pre-HQ EBITDA</h1>
       <p>Сільпо хоче запустити на Bolt Food категорію «Готові страви і кулінарія» під брендом Сільпо. Рішення на зустріч: <b>модель доставки та комісійний ramp для 3-місячного pilot</b>.</p>
     </section>
 
     <nav class="tabs-wrap" aria-label="Розділи документа">
       <div class="tabs" role="tablist">
         <button class="tab" id="tab-case" role="tab" aria-selected="true" aria-controls="case" data-tab="case">1. Бізнес-кейс</button>
-        <button class="tab" id="tab-v1" role="tab" aria-selected="false" aria-controls="v1" data-tab="v1">2. Початковий офер V1</button>
-        <button class="tab" id="tab-v2" role="tab" aria-selected="false" aria-controls="v2" data-tab="v2">3. Фінальний офер V2</button>
+        <button class="tab" id="tab-unit" role="tab" aria-selected="false" aria-controls="unit" data-tab="unit">2. Юніт-економіка</button>
+        <button class="tab" id="tab-offer" role="tab" aria-selected="false" aria-controls="offer" data-tab="offer">3. Фінальний офер</button>
         <button class="tab" id="tab-data" role="tab" aria-selected="false" aria-controls="data" data-tab="data">4. Покриття та модель</button>
       </div>
     </nav>
@@ -307,182 +298,211 @@
       <div class="recommendation">
         <div>
           <div class="kicker">Рекомендація для GM</div>
-          <div class="headline">Захищати 12% на курʼєрах Bolt без ексклюзиву</div>
-          <p>Рішення зараз — не весь 12-місячний контракт, а <b>модель доставки та комісійний ramp на 3-місячний pilot</b>. На горизонті 2027 це дає <b>132.2k замовлень</b>, <b>€1.89m GMV</b> і найбільший <b>Pre-HQ profit €44.6k</b>. Якщо ексклюзив обовʼязковий — fallback 10% → 12%.</p>
+          <div class="headline">Йти без ексклюзиву. Пріоритет — варіанти 1 і 3</div>
+          <p>За оновленою моделлю найбільший Pre-HQ EBITDA дає <b>варіант 1 — курʼєри Сільпо, 8%: €28.9k при марж 2.03%</b>. Варіант 3 на курʼєрах Bolt, 12% дає <b>€26.5k</b> — лише на €2.4k менше, але з більшим GMV і контролем доставки. Обидва ексклюзивні варіанти знищують прибуток.</p>
         </div>
         <div class="talk-track">
           <strong>Ключовий меседж на зустріч</strong>
-          <p>Сільпо запускає категорію під власним брендом. Фінальний офер уже містить цінову поступку; додатковий дисконт на пілоті має бути обмежений за часом і привʼязаний до моделі доставки.</p>
+          <p>Ексклюзив на 6 місяців коштує нам 77–85% річного прибутку і не окуповується приростом обсягу. Знижена ставка можлива лише як короткий ramp на 3-місячному пілоті.</p>
         </div>
       </div>
 
       <div class="section-head">
-        <div><div class="kicker">Предмет угоди</div><h2>Категорія, асортимент і SKU</h2></div>
-        <p>Сільпо хоче запустити на Bolt Food категорію «Готові страви і кулінарія» під брендом Сільпо.</p>
+        <div><div class="kicker">Financial Estimate · 12 місяців</div><h2>Підсумок за чотирма варіантами</h2></div>
+        <p>Усі цифри — з бізнес-моделі Сільпо, старт січень 2027, 139 локацій, Gross Commission.</p>
       </div>
       <div class="grid four">
-        <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">бренд Сільпо в Bolt Food</div></article>
-        <article class="card"><div class="label">SKU на магазин</div><div class="value">50–350</div><div class="sub">план запуску ~150 SKU</div></article>
-        <article class="card"><div class="label">Потенціал мережі</div><div class="value">165</div><div class="sub">магазинів у 71 місті</div></article>
-        <article class="card"><div class="label">Рішення зараз</div><div class="value compact">3-міс. pilot</div><div class="sub">модель доставки + комісійний ramp</div></article>
-      </div>
-      <article class="card" style="margin-top:14px">
-        <div class="label">Асортимент категорії</div>
-        <div class="chips">
-          <span class="chip">млинці / сирники / запіканки</span>
-          <span class="chip">перші страви</span>
-          <span class="chip">другі страви</span>
-          <span class="chip">суші / піца / бургери</span>
-          <span class="chip">салати та закуски</span>
-          <span class="chip">десерти та напої</span>
-          <span class="chip">сніданки та комплексні обіди</span>
-          <span class="chip">пироги / випічка</span>
-          <span class="chip">напівфабрикати власного виробництва</span>
-        </div>
-      </article>
-
-      <div class="section-head">
-        <div><div class="kicker">Очікуваний масштаб</div><h2>2027 за фінальними ставками</h2></div>
-        <p>Горизонт — 12 місяців. Кількість магазинів у моделі зафіксована; відрізняється очікувана продуктивність на магазин.</p>
-      </div>
-      <div class="grid four">
-        <article class="card"><div class="label">Діапазон замовлень</div><div class="value">96k–150k</div><div class="sub">залежно від моделі доставки та ексклюзиву</div></article>
-        <article class="card"><div class="label">Товарний GMV</div><div class="value">€1.37–2.15m</div><div class="sub">комісія рахується без вартості доставки</div></article>
-        <article class="card"><div class="label">Pre-HQ profit</div><div class="value green">€4.7k–44.6k</div><div class="sub">комісійний дохід мінус юніт-кост</div></article>
-        <article class="card"><div class="label">Фактична база</div><div class="value">139</div><div class="sub">live-магазинів у 31 місті</div></article>
+        <article class="card recommended">
+          <div class="label">Варіант 1 · курʼєри Сільпо</div>
+          <div class="value green">€28.9k</div>
+          <div class="sub">Pre-HQ EBITDA · 2.03% від GMV</div>
+          <span class="tag dark">Максимальний прибуток</span>
+        </article>
+        <article class="card">
+          <div class="label">Варіант 2 · Сільпо + ексклюзив</div>
+          <div class="value">€4.3k</div>
+          <div class="sub">Pre-HQ EBITDA · 0.26% від GMV</div>
+          <span class="tag amber">−85% прибутку</span>
+        </article>
+        <article class="card recommended">
+          <div class="label">Варіант 3 · курʼєри Bolt</div>
+          <div class="value green">€26.5k</div>
+          <div class="sub">Pre-HQ EBITDA · 1.65% від GMV</div>
+          <span class="tag dark">Найбільший GMV без ексклюзиву</span>
+        </article>
+        <article class="card">
+          <div class="label">Варіант 4 · Bolt + ексклюзив</div>
+          <div class="value">€6.0k</div>
+          <div class="sub">Pre-HQ EBITDA · 0.34% від GMV</div>
+          <span class="tag amber">−77% прибутку</span>
+        </article>
       </div>
 
       <div class="section-head">
-        <div><div class="kicker">Сценарії</div><h2>Економіка чотирьох опцій V2</h2></div>
+        <div><div class="kicker">Financial Estimate + Inputs</div><h2>Повне порівняння варіантів</h2></div>
       </div>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Опція</th><th class="num">Ставка</th><th class="num">Замовлення</th><th class="num">GMV</th><th class="num">Дохід</th><th class="num">Юніт-кост</th><th class="num">Pre-HQ profit</th><th class="num">€ / замовлення</th><th class="num">Маржа GMV</th></tr>
+            <tr>
+              <th>Показник</th>
+              <th class="num best-col">1 · SILPO OWN courier</th>
+              <th class="num">2 · SILPO OWN EXCLUSIVE</th>
+              <th class="num best-col">3 · SILPO + BF couriers</th>
+              <th class="num">4 · SILPO excl + BF couriers</th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td><b>Сільпо delivery</b><br>без ексклюзиву</td><td class="num">8%</td><td class="num">96,085</td><td class="num">€1,372,096</td><td class="num">€109,768</td><td class="num">€93,760</td><td class="num profit">€16,008</td><td class="num">€0.17</td><td class="num">1.17%</td></tr>
-            <tr><td><b>Сільпо delivery</b><br>ексклюзив 6 міс.</td><td class="num">6% → 8%</td><td class="num">114,147</td><td class="num">€1,630,016</td><td class="num">€116,062</td><td class="num">€111,384</td><td class="num profit">€4,678</td><td class="num">€0.04</td><td class="num">0.29%</td></tr>
-            <tr class="best"><td><b>Bolt delivery</b><br>без ексклюзиву</td><td class="num">12%</td><td class="num">132,208</td><td class="num">€1,887,937</td><td class="num">€226,552</td><td class="num">€181,906</td><td class="num profit">€44,647</td><td class="num">€0.34</td><td class="num">2.36%</td></tr>
-            <tr><td><b>Bolt delivery</b><br>ексклюзив 6 міс.</td><td class="num">10% → 12%</td><td class="num">150,270</td><td class="num">€2,145,857</td><td class="num">€240,152</td><td class="num">€206,757</td><td class="num profit">€33,395</td><td class="num">€0.22</td><td class="num">1.56%</td></tr>
+            <tr class="group"><td colspan="5">Financial Estimate (12 months)</td></tr>
+            <tr><td>GMV</td><td class="num best-col">€1,426,140</td><td class="num">€1,651,320</td><td class="num best-col">€1,602,031</td><td class="num">€1,772,767</td></tr>
+            <tr class="total hero-row"><td>Pre-HQ EBITDA (€)</td><td class="num best-col">€28,901</td><td class="num">€4,311</td><td class="num best-col">€26,480</td><td class="num">€6,021</td></tr>
+            <tr class="total"><td>Pre-HQ EBITDA (%)</td><td class="num best-col">2.03%</td><td class="num">0.26%</td><td class="num best-col">1.65%</td><td class="num">0.34%</td></tr>
+
+            <tr class="group"><td colspan="5">Inputs</td></tr>
+            <tr><td># Yearly Orders</td><td class="num best-col">95,076</td><td class="num">110,088</td><td class="num best-col">95,076</td><td class="num">105,084</td></tr>
+            <tr><td># Monthly Orders</td><td class="num best-col">7,923</td><td class="num">9,174</td><td class="num best-col">7,923</td><td class="num">8,757</td></tr>
+            <tr><td># Locations</td><td class="num best-col">139</td><td class="num">139</td><td class="num best-col">139</td><td class="num">139</td></tr>
+            <tr><td># Orders Per Store per day</td><td class="num best-col">1.9</td><td class="num">2.2</td><td class="num best-col">1.9</td><td class="num">2.1</td></tr>
+            <tr><td>GMV / Order</td><td class="num best-col">€15.00</td><td class="num">€15.00</td><td class="num best-col">€16.85</td><td class="num">€16.87</td></tr>
+            <tr><td>AOV</td><td class="num best-col">€15.00</td><td class="num">€15.00</td><td class="num best-col">€15.00</td><td class="num">€15.00</td></tr>
+
+            <tr class="group"><td colspan="5">Commission model</td></tr>
+            <tr><td>Модель</td><td class="num best-col">Gross Commission</td><td class="num">Gross Commission</td><td class="num best-col">Gross Commission</td><td class="num">Gross Commission</td></tr>
+            <tr><td>Contract Period</td><td class="num best-col">Long Term (13m+)</td><td class="num">Long Term (13m+)</td><td class="num best-col">Long Term (13m+)</td><td class="num">Mid Term (4-12m)</td></tr>
+            <tr class="total"><td>Commission %</td><td class="num best-col">8%</td><td class="num">6%</td><td class="num best-col">12%</td><td class="num">10%</td></tr>
+            <tr><td>Деталі ставки</td><td class="num best-col">w/o Bolt +</td><td class="num">w/o Bolt +</td><td class="num best-col">w/o Bolt +</td><td class="num">w/o Bolt +</td></tr>
           </tbody>
         </table>
       </div>
-      <div class="callout"><span class="dot"></span><span><b>Trade-off ексклюзиву на Bolt delivery:</b> +18.1k замовлень і +€258k GMV, але −€11.3k Pre-HQ profit проти 12% без ексклюзиву через знижену ставку в перші 6 місяців.</span></div>
+      <p class="fine">Коментарі з моделі: <b>1</b> — DF (SF+SOF) виключено через RoD. <b>2</b> — DF (SF+SOF) виключено через RoD, ексклюзив 6 місяців, далі 8%. <b>3</b> — SF включено (city level stores). <b>4</b> — SF включено (city level stores), ексклюзив 6 місяців, далі 12%.</p>
 
       <div class="section-head">
-        <div><div class="kicker">База моделі</div><h2>Що стоїть за прогнозом</h2></div>
-        <p>Стисло: прогноз рахується від фактичного трафіку серпня 2026. Повні вхідні дані та географія — у вкладці «Покриття та модель».</p>
+        <div><div class="kicker">Візуально</div><h2>Pre-HQ EBITDA за варіантами</h2></div>
       </div>
-      <div class="grid three">
-        <article class="card">
-          <h3>Факт за серпень 2026</h3>
-          <ul class="assumptions">
-            <li><b>7,044</b> замовлення на <b>139</b> магазинах</li>
-            <li><b>1.63</b> OSPD · <b>€14.28</b> товарний AOV</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Growth logic</h3>
-          <ul class="assumptions">
-            <li>139 × OSPD × 30.4 дня × €14.28</li>
-            <li>S-крива до cap OSPD 2.0 / 2.5 / 3.0 / 3.5</li>
-          </ul>
-        </article>
-        <article class="card warning">
-          <h3>Не включено</h3>
-          <ul class="assumptions">
-            <li>ПДВ, HQ allocation, окремий marketing budget</li>
-            <li>Розгортання до 165 магазинів</li>
-          </ul>
-        </article>
+      <div class="bar-chart" aria-label="Pre-HQ EBITDA за чотирма варіантами, євро за 12 місяців">
+        <div class="bar-row"><div class="bar-label">1 · Курʼєри Сільпо, 8%</div><div class="track"><div class="fill" style="width:100%"></div></div><div class="bar-value">€28.9k</div></div>
+        <div class="bar-row"><div class="bar-label">2 · Курʼєри Сільпо, ексклюзив 6%</div><div class="track"><div class="fill muted" style="width:14.9%"></div></div><div class="bar-value">€4.3k</div></div>
+        <div class="bar-row"><div class="bar-label">3 · Курʼєри Bolt, 12%</div><div class="track"><div class="fill" style="width:91.6%"></div></div><div class="bar-value">€26.5k</div></div>
+        <div class="bar-row"><div class="bar-label">4 · Курʼєри Bolt, ексклюзив 10%</div><div class="track"><div class="fill muted" style="width:20.8%"></div></div><div class="bar-value">€6.0k</div></div>
+        <div class="legend"><span><i></i>Без ексклюзиву</span><span><i class="old"></i>З ексклюзивом 6 місяців</span><span>Метрика: Pre-HQ EBITDA за 12 місяців, €</span></div>
       </div>
-      <div class="callout"><span class="dot"></span><span><b>Не змішуємо scope і base:</b> офер описує потенціал до 165 магазинів у 71 місті; прогноз консервативно використовує 139 уже транзакційних магазинів у 31 місті. Bolt Food реально працює у 37 містах України.</span></div>
-    </section>
+      <div class="callout"><span class="dot"></span><span><b>Ексклюзив не окуповується:</b> варіант 2 додає 15k замовлень до варіанта 1, але забирає €24.6k прибутку. Варіант 4 додає 10k замовлень до варіанта 3 і забирає €20.5k.</span></div>
 
-    <section class="panel" id="v1" role="tabpanel" aria-labelledby="tab-v1">
       <div class="section-head">
-        <div><div class="kicker">Серпень 2026 · початкова позиція</div><h2>Комерційний офер V1</h2></div>
-        <p>Чотири окремі варіанти на контракт 1 рік. Повний маркетинговий пакет привʼязаний до 6 місяців ексклюзиву. Пропозиція чинна 30 днів від серпня 2026.</p>
+        <div><div class="kicker">Вибір між 1 і 3</div><h2>Прибуток проти контролю доставки</h2></div>
       </div>
-      <div class="grid four">
-        <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">запуск під брендом Сільпо</div></article>
-        <article class="card"><div class="label">SKU на магазин</div><div class="value">50–350</div><div class="sub">план запуску ~150 SKU</div></article>
-        <article class="card"><div class="label">Географія офера</div><div class="value">165 / 71</div><div class="sub">магазинів / міст — заявлений потенціал</div></article>
-        <article class="card"><div class="label">Bolt Food уже є</div><div class="value">33</div><div class="sub">з 71 міста вже працюють у платформі</div></article>
-      </div>
-      <article class="card" style="margin-top:14px">
-        <div class="label">Асортимент</div>
-        <div class="chips">
-          <span class="chip">млинці / сирники / запіканки</span>
-          <span class="chip">перші страви</span>
-          <span class="chip">другі страви</span>
-          <span class="chip">суші / піца / бургери</span>
-          <span class="chip">салати та закуски</span>
-          <span class="chip">десерти та напої</span>
-          <span class="chip">сніданки та комплексні обіди</span>
-          <span class="chip">пироги / випічка</span>
-          <span class="chip">напівфабрикати власного виробництва</span>
-        </div>
-      </article>
-      <div class="grid four" style="margin-top:14px">
-        <article class="card">
-          <div class="label">Варіант 1 · курʼєри Сільпо</div><div class="value">10%</div>
-          <div class="sub">1 рік · без ексклюзиву</div><span class="tag">Базові DF</span>
-          <ul><li>Логістика Сільпо</li><li>Максимальна свобода</li><li>Без Bolt Plus</li></ul>
-        </article>
-        <article class="card">
-          <div class="label">Варіант 2 · курʼєри Сільпо</div><div class="value">7% → 10%</div>
-          <div class="sub">6 міс. ексклюзиву → стандартна ставка</div><span class="tag amber">Повний DF</span>
-          <ul><li>Логістика Сільпо</li><li>Банери, push, modal, CRM</li><li>Без Bolt Plus</li></ul>
+      <div class="grid two">
+        <article class="card recommended">
+          <h3>Варіант 1 · курʼєри Сільпо, 8%</h3>
+          <ul class="assumptions">
+            <li><b>+€2.4k</b> Pre-HQ EBITDA проти варіанта 3.</li>
+            <li>Найкраща маржа: <b>2.03%</b> від GMV.</li>
+            <li>CPO = €0: логістику несе Сільпо, ми не платимо за доставку.</li>
+            <li>DF не монетизуємо — GMV/Order дорівнює AOV €15.</li>
+          </ul>
         </article>
         <article class="card recommended">
-          <div class="label">Варіант 3 · курʼєри Bolt</div><div class="value">14%</div>
-          <div class="sub">1 рік · без ексклюзиву</div><span class="tag dark">Рекомендували у V1</span>
-          <ul><li>0 логістики для Сільпо</li><li>2 в.п. — Bolt Plus</li><li>Базові DF</li></ul>
-        </article>
-        <article class="card">
-          <div class="label">Варіант 4 · курʼєри Bolt</div><div class="value">12% → 14%</div>
-          <div class="sub">6 міс. ексклюзиву → стандартна ставка</div><span class="tag amber">Повний DF</span>
-          <ul><li>0 логістики для Сільпо</li><li>2 в.п. — Bolt Plus</li><li>Банери, push, modal, CRM</li></ul>
-        </article>
-      </div>
-
-      <div class="section-head">
-        <div><div class="kicker">Спільно для всіх опцій</div><h2>Що входить у пакет</h2></div>
-      </div>
-      <div class="grid four">
-        <article class="card"><div class="label">Контракт</div><div class="value">1 рік</div><div class="sub">умови фіксуються договором</div></article>
-        <article class="card"><div class="label">Розміщення</div><div class="value">Brand store</div><div class="sub">Сільпо + категорія в застосунку</div></article>
-        <article class="card"><div class="label">Інтеграція</div><div class="value">≈2 тижні</div><div class="sub">SKU, фото, ціни, стоки, зони доставки</div></article>
-        <article class="card"><div class="label">Підтримка</div><div class="value">24/7</div><div class="sub">супровід + партнерський портал</div></article>
-      </div>
-      <div class="grid two" style="margin-top:14px">
-        <article class="card">
-          <h3>Маркетинг за рахунок Bolt</h3>
+          <h3>Варіант 3 · курʼєри Bolt, 12%</h3>
           <ul class="assumptions">
-            <li>Без ексклюзиву (варіанти 1 і 3) — лише періодичні DF-кампанії.</li>
-            <li>Ексклюзив 6 міс. (варіанти 2 і 4) — повний пакет: DF, банери, пуш, модал, розсилка на ітерів.</li>
-            <li>Календар фіксується окремим планом.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Наступні кроки з офера</h3>
-          <ul class="assumptions">
-            <li><b>Крок 1.</b> Вибір варіанту: ставка, курʼєри, ексклюзив.</li>
-            <li><b>Крок 2.</b> Договір на 1 рік + план DF-кампаній.</li>
-            <li><b>Крок 3.</b> Інтеграція меню ≈2 тижні.</li>
-            <li><b>Крок 4.</b> 3-місячний pilot у топ-містах → мережа.</li>
+            <li><b>+€176k</b> GMV проти варіанта 1 за того самого обсягу замовлень.</li>
+            <li>Виручка на замовлення втричі вища: <b>€3.65</b> проти €1.20.</li>
+            <li>Але CPO €2.20 зʼїдає різницю: Pre-HQ EBITDA <b>€26.5k</b>.</li>
+            <li>Контроль над доставкою, SF включено на рівні міст.</li>
           </ul>
         </article>
       </div>
-      <p class="fine">Комісія нараховується від товарної частини замовлення (без вартості доставки). Усі ставки без ПДВ. Пропозиція є комерційною і не є публічною офертою.</p>
     </section>
 
-    <section class="panel" id="v2" role="tabpanel" aria-labelledby="tab-v2">
+    <section class="panel" id="unit" role="tabpanel" aria-labelledby="tab-unit">
       <div class="section-head">
-        <div><div class="kicker">Фінальна позиція</div><h2>Офер V2: простіше для вибору, нижче за ставкою</h2></div>
-        <p>Два маршрути за типом курʼєрів; у кожному — стандартна ставка або дисконт за 6 місяців ексклюзиву. Рішення на зустріч: модель доставки та комісійний ramp для 3-місячного pilot.</p>
+        <div><div class="kicker">Commission model</div><h2>Юніт-економіка на одне замовлення</h2></div>
+        <p>Повний P&amp;L з моделі: від GMV на замовлення до Pre-HQ EBITDA. Усі значення в євро на замовлення.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>€ на замовлення</th>
+              <th class="num best-col">1 · Сільпо 8%</th>
+              <th class="num">2 · Сільпо excl 6%</th>
+              <th class="num best-col">3 · Bolt 12%</th>
+              <th class="num">4 · Bolt excl 10%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="group"><td colspan="5">Структура замовлення</td></tr>
+            <tr><td>GMV / Order</td><td class="num best-col">15.00</td><td class="num">15.00</td><td class="num best-col">16.85</td><td class="num">16.87</td></tr>
+            <tr><td class="indent">AOV</td><td class="num best-col">15.00</td><td class="num">15.00</td><td class="num best-col">15.00</td><td class="num">15.00</td></tr>
+            <tr><td class="indent">DF (incl. SoF &amp; SF)</td><td class="num best-col">0.00</td><td class="num">0.00</td><td class="num best-col">1.85</td><td class="num">1.87</td></tr>
+            <tr><td class="indent">VAT</td><td class="num best-col">—</td><td class="num">—</td><td class="num best-col">20%</td><td class="num">20%</td></tr>
+
+            <tr class="group"><td colspan="5">Revenue</td></tr>
+            <tr class="total"><td>Revenue</td><td class="num best-col">1.20</td><td class="num">0.90</td><td class="num best-col">3.65</td><td class="num">3.37</td></tr>
+            <tr><td class="indent">Commission</td><td class="num best-col">1.20</td><td class="num">0.90</td><td class="num best-col">1.80</td><td class="num">1.50</td></tr>
+            <tr><td class="indent">DF (incl. SoF &amp; SF)</td><td class="num best-col">0.00</td><td class="num">0.00</td><td class="num best-col">1.85</td><td class="num">1.87</td></tr>
+            <tr><td class="indent">Other Revenue (Ads, Campaigns)</td><td class="num best-col">0.00</td><td class="num">0.00</td><td class="num best-col">0.00</td><td class="num">0.00</td></tr>
+
+            <tr class="group"><td colspan="5">Variable Costs</td></tr>
+            <tr class="total"><td>Variable Costs</td><td class="num best-col">0.359</td><td class="num">0.359</td><td class="num best-col">2.733</td><td class="num">2.684</td></tr>
+            <tr><td class="indent">CPO</td><td class="num best-col">0.00</td><td class="num">0.00</td><td class="num best-col">2.200</td><td class="num">2.150</td></tr>
+            <tr><td class="indent">Demand refunds</td><td class="num best-col">0.031</td><td class="num">0.031</td><td class="num best-col">0.035</td><td class="num">0.035</td></tr>
+            <tr><td class="indent">Supply refunds</td><td class="num best-col">0.178</td><td class="num">0.178</td><td class="num best-col">0.201</td><td class="num">0.201</td></tr>
+            <tr><td class="indent">Payment processing, total</td><td class="num best-col">0.150</td><td class="num">0.150</td><td class="num best-col">0.168</td><td class="num">0.169</td></tr>
+            <tr><td class="indent">Fraud &amp; Failed payments</td><td class="num best-col">0.00</td><td class="num">0.00</td><td class="num best-col">0.00</td><td class="num">0.00</td></tr>
+            <tr><td class="indent">Bad Debt Write-off</td><td class="num best-col">—</td><td class="num">—</td><td class="num best-col">0.130</td><td class="num">0.130</td></tr>
+
+            <tr class="total"><td>Gross Profit</td><td class="num best-col">0.841</td><td class="num">0.541</td><td class="num best-col">0.917</td><td class="num">0.686</td></tr>
+
+            <tr class="group"><td colspan="5">Semi-Variable Costs</td></tr>
+            <tr class="total"><td>Semi-Variable Costs</td><td class="num best-col">0.382</td><td class="num">0.382</td><td class="num best-col">0.364</td><td class="num">0.365</td></tr>
+            <tr><td class="indent">Operational costs</td><td class="num best-col">0.208</td><td class="num">0.208</td><td class="num best-col">0.169</td><td class="num">0.169</td></tr>
+            <tr><td class="indent">Customer Support</td><td class="num best-col">0.174</td><td class="num">0.174</td><td class="num best-col">0.196</td><td class="num">0.196</td></tr>
+
+            <tr class="total hero-row"><td>Contribution Profit</td><td class="num best-col">0.459</td><td class="num">0.159</td><td class="num best-col">0.552</td><td class="num">0.322</td></tr>
+
+            <tr class="group"><td colspan="5">Нижче Contribution Profit</td></tr>
+            <tr><td class="indent">Demand Marketing</td><td class="num best-col">0.00</td><td class="num">0.00</td><td class="num best-col">0.00</td><td class="num">0.00</td></tr>
+            <tr><td class="indent">Demand Incentives</td><td class="num best-col">0.00</td><td class="num">0.00</td><td class="num best-col">0.010</td><td class="num">0.00</td></tr>
+            <tr><td class="indent">Total Local OPS</td><td class="num best-col">0.005</td><td class="num">0.005</td><td class="num best-col">0.005</td><td class="num">0.005</td></tr>
+            <tr><td class="indent">Global OPS &amp; IT Infrastructure</td><td class="num best-col">0.150</td><td class="num">0.115</td><td class="num best-col">0.259</td><td class="num">0.259</td></tr>
+
+            <tr class="total hero-row"><td>Pre-HQ EBITDA</td><td class="num best-col">0.304</td><td class="num">0.039</td><td class="num best-col">0.279</td><td class="num">0.057</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-head">
+        <div><div class="kicker">Маржинальність</div><h2>Ті самі рівні у % від GMV</h2></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>% від GMV</th>
+              <th class="num best-col">1 · Сільпо 8%</th>
+              <th class="num">2 · Сільпо excl 6%</th>
+              <th class="num best-col">3 · Bolt 12%</th>
+              <th class="num">4 · Bolt excl 10%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Revenue</td><td class="num best-col">8.00%</td><td class="num">6.00%</td><td class="num best-col">21.66%</td><td class="num">19.98%</td></tr>
+            <tr><td>Variable Costs</td><td class="num best-col">2.39%</td><td class="num">2.39%</td><td class="num best-col">16.22%</td><td class="num">15.91%</td></tr>
+            <tr class="total"><td>Gross Profit</td><td class="num best-col">5.61%</td><td class="num">3.61%</td><td class="num best-col">5.44%</td><td class="num">4.07%</td></tr>
+            <tr><td>Semi-Variable Costs</td><td class="num best-col">2.55%</td><td class="num">2.55%</td><td class="num best-col">2.16%</td><td class="num">2.16%</td></tr>
+            <tr class="total hero-row"><td>Contribution Profit</td><td class="num best-col">3.06%</td><td class="num">1.06%</td><td class="num best-col">3.28%</td><td class="num">1.91%</td></tr>
+            <tr class="total hero-row"><td>Pre-HQ EBITDA</td><td class="num best-col">2.03%</td><td class="num">0.26%</td><td class="num best-col">1.65%</td><td class="num">0.34%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><span class="dot"></span><span><b>Що читати в цих таблицях:</b> на курʼєрах Bolt ми заробляємо втричі більше виручки на замовлення (€3.65 проти €1.20), але CPO €2.20 забирає майже все. Contribution Profit там навіть вищий (€0.552 проти €0.459) — різницю зʼїдають Global OPS &amp; IT €0.259 проти €0.150.</span></div>
+      <p class="fine">Джерело: SILPO business model.xlsx, лист Silpo, блоки Financial Estimate (12 months), Inputs, Commission model, Contribution Profit. Partner Enablement Investment у моделі не закладено, breakeven = 0 замовлень для всіх варіантів.</p>
+    </section>
+
+    <section class="panel" id="offer" role="tabpanel" aria-labelledby="tab-offer">
+      <div class="section-head">
+        <div><div class="kicker">Фінальна позиція</div><h2>Офер: два маршрути за типом курʼєрів</h2></div>
+        <p>У кожному маршруті — стандартна ставка або дисконт за 6 місяців ексклюзиву. Пропозиція чинна 30 днів, контракт 1 рік.</p>
       </div>
       <div class="grid four">
         <article class="card"><div class="label">Категорія</div><div class="value compact">Готові страви і кулінарія</div><div class="sub">бренд-стор Сільпо + полиця в застосунку</div></article>
@@ -504,24 +524,47 @@
           <span class="chip">напівфабрикати власного виробництва</span>
         </div>
       </article>
-      <div class="grid two" style="margin-top:14px">
-        <article class="card">
+
+      <div class="section-head">
+        <div><div class="kicker">Умови</div><h2>Ставки за маршрутами</h2></div>
+      </div>
+      <div class="grid two">
+        <article class="card recommended">
           <div class="label">Маршрут 1 · курʼєри Сільпо</div>
           <div class="grid two" style="margin-top:16px">
-            <div><div class="value">8%</div><div class="sub">без ексклюзиву · базові DF</div></div>
+            <div><div class="value green">8%</div><div class="sub">без ексклюзиву · базові DF</div></div>
             <div><div class="value">6% → 8%</div><div class="sub">ексклюзив 6 міс. · повний DF</div></div>
           </div>
-          <ul><li>Сільпо зберігає власну логістику</li><li>Немає компонента Bolt Plus</li></ul>
+          <ul>
+            <li>Сільпо зберігає власну логістику, CPO для Bolt = €0</li>
+            <li>Немає компонента Bolt Plus</li>
+            <li>DF (SF+SOF) виключено через RoD</li>
+          </ul>
+          <span class="tag dark">8% — найбільший Pre-HQ EBITDA</span>
         </article>
         <article class="card recommended">
           <div class="label">Маршрут 2 · курʼєри Bolt</div>
           <div class="grid two" style="margin-top:16px">
-            <div><div class="value">12%</div><div class="sub">без ексклюзиву · базові DF</div></div>
+            <div><div class="value green">12%</div><div class="sub">без ексклюзиву · базові DF</div></div>
             <div><div class="value">10% → 12%</div><div class="sub">ексклюзив 6 міс. · повний DF</div></div>
           </div>
-          <ul><li>0 витрат Сільпо на last-mile логістику</li><li>2 в.п. ставки — Bolt Plus</li></ul>
-          <span class="tag dark">Рекомендований маршрут</span>
+          <ul>
+            <li>0 витрат Сільпо на last-mile логістику</li>
+            <li>2 в.п. ставки — Bolt Plus</li>
+            <li>SF включено на рівні міст</li>
+          </ul>
+          <span class="tag dark">12% — найбільший GMV</span>
         </article>
+      </div>
+
+      <div class="section-head">
+        <div><div class="kicker">Спільно для всіх опцій</div><h2>Що входить у пакет</h2></div>
+      </div>
+      <div class="grid four">
+        <article class="card"><div class="label">Контракт</div><div class="value">1 рік</div><div class="sub">умови фіксуються договором</div></article>
+        <article class="card"><div class="label">Розміщення</div><div class="value">Brand store</div><div class="sub">Сільпо + категорія в застосунку</div></article>
+        <article class="card"><div class="label">Інтеграція</div><div class="value">≈2 тижні</div><div class="sub">SKU, фото, ціни, стоки, зони доставки</div></article>
+        <article class="card"><div class="label">Підтримка</div><div class="value">24/7</div><div class="sub">супровід + партнерський портал</div></article>
       </div>
       <div class="grid two" style="margin-top:14px">
         <article class="card">
@@ -533,54 +576,25 @@
           </ul>
         </article>
         <article class="card">
-          <h3>Що не змінилось від V1</h3>
+          <h3>Наступні кроки</h3>
           <ul class="assumptions">
-            <li>Категорія, 50–350 SKU на магазин (план ~150), brand store, інтеграція ≈2 тижні, супровід 24/7.</li>
-            <li>Комісія — від товарної частини, без вартості доставки, ставки без ПДВ.</li>
-            <li>Запуск: 3-місячний pilot у топ-містах, далі мережа. Календар DF фіксується окремо.</li>
+            <li><b>Крок 1.</b> Вибір варіанту: ставка, курʼєри, ексклюзив.</li>
+            <li><b>Крок 2.</b> Договір на 1 рік + план DF-кампаній.</li>
+            <li><b>Крок 3.</b> Інтеграція меню ≈2 тижні.</li>
+            <li><b>Крок 4.</b> 3-місячний pilot у топ-містах → мережа.</li>
           </ul>
         </article>
-      </div>
-
-      <div class="section-head">
-        <div><div class="kicker">V1 → V2</div><h2>Розмір цінової поступки</h2></div>
-        <p>Порівняння ізольовано показує ефект ставки за того самого прогнозного обсягу.</p>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Опція</th><th class="num">V1</th><th class="num">Фінальний V2</th><th class="num">Зміна ставки</th><th class="num">Pre-HQ profit V1</th><th class="num">Pre-HQ profit V2</th><th class="num">Δ profit</th></tr></thead>
-          <tbody>
-            <tr><td><b>Сільпо delivery</b> · без ексклюзиву</td><td class="num">10%</td><td class="num">8%</td><td class="num delta-down">−2 в.п.</td><td class="num">€43.5k</td><td class="num profit">€16.0k</td><td class="num delta-down">−€27.4k</td></tr>
-            <tr><td><b>Сільпо delivery</b> · ексклюзив</td><td class="num">7% → 10%</td><td class="num">6% → 8%</td><td class="num delta-down">−1 / −2 в.п.</td><td class="num">€30.1k</td><td class="num profit">€4.7k</td><td class="num delta-down">−€25.4k</td></tr>
-            <tr class="best"><td><b>Bolt delivery</b> · без ексклюзиву</td><td class="num">14%</td><td class="num">12%</td><td class="num delta-down">−2 в.п.</td><td class="num">€82.4k</td><td class="num profit">€44.6k</td><td class="num delta-down">−€37.8k</td></tr>
-            <tr><td><b>Bolt delivery</b> · ексклюзив</td><td class="num">12% → 14%</td><td class="num">10% → 12%</td><td class="num delta-down">−2 в.п.</td><td class="num">€76.3k</td><td class="num profit">€33.4k</td><td class="num delta-down">−€42.9k</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="section-head">
-        <div><div class="kicker">Візуально</div><h2>Pre-HQ profit: до та після зниження ставки</h2></div>
-      </div>
-      <div class="bar-chart" aria-label="Порівняння Pre-HQ profit V1 та V2">
-        <div class="bar-row"><div class="bar-label">Сільпо · без ексклюзиву</div><div class="track"><div class="fill muted" style="width:52.7%"></div></div><div class="bar-value">€43.5k V1</div></div>
-        <div class="bar-row"><div class="bar-label">Сільпо · без ексклюзиву</div><div class="track"><div class="fill" style="width:19.4%"></div></div><div class="bar-value">€16.0k V2</div></div>
-        <div class="bar-row"><div class="bar-label">Сільпо · ексклюзив</div><div class="track"><div class="fill muted" style="width:36.5%"></div></div><div class="bar-value">€30.1k V1</div></div>
-        <div class="bar-row"><div class="bar-label">Сільпо · ексклюзив</div><div class="track"><div class="fill" style="width:5.7%"></div></div><div class="bar-value">€4.7k V2</div></div>
-        <div class="bar-row"><div class="bar-label">Bolt · без ексклюзиву</div><div class="track"><div class="fill muted" style="width:100%"></div></div><div class="bar-value">€82.4k V1</div></div>
-        <div class="bar-row"><div class="bar-label">Bolt · без ексклюзиву</div><div class="track"><div class="fill" style="width:54.2%"></div></div><div class="bar-value">€44.6k V2</div></div>
-        <div class="bar-row"><div class="bar-label">Bolt · ексклюзив</div><div class="track"><div class="fill muted" style="width:92.6%"></div></div><div class="bar-value">€76.3k V1</div></div>
-        <div class="bar-row"><div class="bar-label">Bolt · ексклюзив</div><div class="track"><div class="fill" style="width:40.5%"></div></div><div class="bar-value">€33.4k V2</div></div>
-        <div class="legend"><span><i class="old"></i>Початковий офер V1</span><span><i></i>Фінальний офер V2</span><span>Метрика: річний Pre-HQ profit, € тис.</span></div>
       </div>
 
       <div class="section-head">
         <div><div class="kicker">Guardrails для переговорів</div><h2>Що варто зафіксувати</h2></div>
       </div>
       <div class="grid three">
-        <article class="card"><h3>1. Обмін цінності</h3><div class="sub">Будь-який додатковий дисконт — лише в обмін на ексклюзив, volume commitment або іншу вимірювану цінність.</div></article>
+        <article class="card"><h3>1. Ексклюзив коштує дорого</h3><div class="sub">6 місяців зниженої ставки забирають 77–85% річного Pre-HQ EBITDA. Давати лише за volume commitment, який перекриває втрату.</div></article>
         <article class="card"><h3>2. Marketing plan</h3><div class="sub">Для ексклюзиву зафіксувати календар DF, банерів, push, modal і CRM-розсилок окремим планом.</div></article>
-        <article class="card"><h3>3. Scope запуску</h3><div class="sub">Не включати 165 магазинів у base case без підтвердженого rollout-плану, зон доставки та технічної готовності.</div></article>
+        <article class="card"><h3>3. Scope запуску</h3><div class="sub">На зустрічі фіксуємо модель доставки та ramp на 3-місячний pilot. 165 магазинів не включати в base case без rollout-плану.</div></article>
       </div>
+      <p class="fine">Комісія нараховується від товарної частини замовлення (без вартості доставки). Усі ставки без ПДВ. Пропозиція є комерційною і не є публічною офертою.</p>
     </section>
 
     <section class="panel" id="data" role="tabpanel" aria-labelledby="tab-data">
@@ -600,7 +614,7 @@
           <table class="tight">
             <thead><tr><th>Місто</th><th class="num">Магазинів</th></tr></thead>
             <tbody>
-              <tr class="best"><td><b>Київ і передмістя</b></td><td class="num">61</td></tr>
+              <tr><td><b>Київ і передмістя</b></td><td class="num">61</td></tr>
               <tr><td>Львів</td><td class="num">13</td></tr>
               <tr><td>Одеса</td><td class="num">9</td></tr>
               <tr><td>Дніпро</td><td class="num">8</td></tr>
@@ -618,52 +632,49 @@
       <p class="fine">По одному магазину: Хмельницький, Кропивницький, Трускавець, Дрогобич, Мукачево, Суми, Павлоград, Кривий Ріг, Камʼянець-Подільський.</p>
 
       <div class="section-head">
-        <div><div class="kicker">Дані, якими оперуємо</div><h2>Фактична база серпня 2026</h2></div>
-        <p>Усі вхідні величини — власні дані Bolt. Єдиний драйвер зростання в моделі — OSPD; кількість магазинів зафіксована.</p>
+        <div><div class="kicker">Від факту до моделі</div><h2>Що закладено в прогноз</h2></div>
+        <p>Модель стартує з січня 2027 і спирається на фактичний трафік серпня 2026.</p>
       </div>
       <div class="grid four">
         <article class="card"><div class="label">Магазини live</div><div class="value">139</div><div class="sub">транзакційних, у 31 місті</div></article>
-        <article class="card"><div class="label">Замовлення</div><div class="value">7,044</div><div class="sub">факт за серпень 2026</div></article>
-        <article class="card"><div class="label">OSPD факт</div><div class="value">1.63</div><div class="sub">замовлень на магазин на день</div></article>
-        <article class="card"><div class="label">Товарний AOV</div><div class="value">€14.28</div><div class="sub">фактичний середній чек</div></article>
+        <article class="card"><div class="label">Замовлення, факт</div><div class="value">7,044</div><div class="sub">серпень 2026 · модель бере 7,923–9,174/міс</div></article>
+        <article class="card"><div class="label">OSPD</div><div class="value">1.63 → 1.9–2.2</div><div class="sub">факт серпня → допущення моделі</div></article>
+        <article class="card"><div class="label">AOV</div><div class="value">€14.28 → €15</div><div class="sub">факт серпня → допущення моделі</div></article>
       </div>
 
-      <div class="section-head">
-        <div><div class="kicker">Механіка розрахунку</div><h2>Параметри, юніт-кост і межі моделі</h2></div>
-      </div>
-      <div class="grid three">
+      <div class="grid three" style="margin-top:14px">
         <article class="card">
-          <h3>Параметри прогнозу</h3>
+          <h3>Ключові допущення</h3>
           <ul class="assumptions">
-            <li>Формула: <b>139 × OSPD × 30.4 дня × €14.28</b>.</li>
-            <li>OSPD зростає за S-кривою від 1.63 до cap <b>2.0 / 2.5 / 3.0 / 3.5</b> за варіантами.</li>
-            <li>Крутизна ramp 1.2, середина розгону — 3-й місяць, плато з 7-го.</li>
+            <li>Старт: <b>січень 2027</b>, горизонт 12 місяців.</li>
+            <li>Кількість локацій зафіксована на <b>139</b> у всіх варіантах.</li>
+            <li>Драйвер різниці між варіантами — OSPD та ставка комісії.</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Юніт-кост і прибуток</h3>
+          <h3>Де GMV рахується інакше</h3>
           <ul class="assumptions">
-            <li>Юніт-кост: <b>€0.976</b> на замовлення на курʼєрах Сільпо, <b>€1.376</b> на курʼєрах Bolt.</li>
-            <li><b>Pre-HQ profit</b> = комісійний дохід − юніт-кост.</li>
-            <li>Комісія — від товарної частини замовлення, без вартості доставки; усі ставки без ПДВ.</li>
+            <li>Варіанти 1–2: GMV/Order = AOV = <b>€15</b>, DF не монетизується.</li>
+            <li>Варіанти 3–4: GMV/Order = <b>€16.85–16.87</b>, бо включає DF €1.85–1.87.</li>
+            <li>Тому вищий GMV у варіантах 3–4 не означає вищий прибуток.</li>
           </ul>
         </article>
         <article class="card warning">
-          <h3>Чого немає в розрахунку</h3>
+          <h3>Межі моделі</h3>
           <ul class="assumptions">
-            <li>ПДВ, HQ allocation та окремий incremental marketing budget.</li>
-            <li>Заявлені в офері <b>165 магазинів і 71 місто</b> — це потенціал, у моделі не використані.</li>
+            <li>Заявлені в офері <b>165 магазинів і 71 місто</b> — потенціал, у моделі не використані.</li>
             <li>Bolt Food реально працює у <b>37 містах</b> України.</li>
+            <li>Partner Enablement Investment не закладено.</li>
           </ul>
         </article>
       </div>
       <div class="callout"><span class="dot"></span><span><b>Дві цифри про міста:</b> офер каже, що Bolt Food уже працює в 33 з 71 заявлених міст Сільпо. У прогнозній базі — 31 місто з live-магазинами; платформа загалом присутня в 37 містах України.</span></div>
-      <p class="fine">Джерело фактичних даних: main.ng_delivery · бренди LOKO + DARK KITCHEN SILPO + SILPO RESTO · серпень 2026. Прогноз: Silpo_Forecast_Ukraine 2027. Сезонність не закладена: лютий нижчий за січень лише через кількість днів.</p>
+      <p class="fine">Джерела: SILPO business model.xlsx (лист Silpo) — фінансова модель. Фактична база: main.ng_delivery · бренди LOKO + DARK KITCHEN SILPO + SILPO RESTO · серпень 2026.</p>
     </section>
 
     <footer class="source-line">
-      <span>Джерела: Silpo Offer v.1, Silpo Offer v.2 (final), фактичні дані Bolt за серпень 2026.</span>
-      <span><a href="https://viktorskalivskyi-bolt.github.io/forecast-deck/" target="_blank" rel="noopener">Відкрити повну прогнозну презентацію ↗</a></span>
+      <span>Джерела: SILPO business model.xlsx (лист Silpo), Silpo Offer v.2 (final), фактичні дані Bolt за серпень 2026.</span>
+      <span><a href="https://viktorskalivskyi-bolt.github.io/forecast-deck/" target="_blank" rel="noopener">Попередня прогнозна презентація ↗</a></span>
     </footer>
   </main>
 
@@ -699,7 +710,7 @@
     activate(location.hash.slice(1) || "case", false, false);
     window.addEventListener("hashchange", () => activate(location.hash.slice(1), false));
 
-const mapCities = [
+    const mapCities = [
 { n:"Київ і передмістя", s:61, x:295.2, y:110.5, p:"t", dy:0 },
     { n:"Львів", s:13, x:69.9, y:140.2, p:"l", dy:0 },
     { n:"Одеса", s:9, x:300.0, y:312.2, p:"l", dy:0 },
